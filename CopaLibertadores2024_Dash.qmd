@@ -1,0 +1,26 @@
+---
+title: "Copa Libertadores 2024"
+format: dashboard
+---
+
+# Resumen
+
+## Row 
+
+### Column 
+
+```{r}
+print("hola")
+```
+
+### Column - Hola
+
+```{r}
+print("hola")
+```
+
+## Row
+
+
+
+# Equipos
