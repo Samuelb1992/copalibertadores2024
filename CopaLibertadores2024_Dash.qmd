@@ -1,26 +1,118 @@
 ---
 title: "Copa Libertadores 2024"
 format: dashboard
+theme: 
+  - darkly
+  - copalibertadores2024.scss
+
 ---
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+library(tidyverse)
+library(gt)
+library(gtExtras)
+library(nanoparquet)
+```
+
+```{r}
+#| label: load-data
+#| message: false
+#| warning: false
+
+folder.parquet <- list.files("data", pattern = "*.parquet", full.names = TRUE)
+parquet.files <- lapply(folder.parquet, read_parquet)
+names(parquet.files) <- str_split_i(str_split_i(folder.parquet,"player_",2),"\\.",1)
+```
+
+
+```{r}
+#| label: filter-transforming-data
+#| message: false
+#| warning: false
+
+player.summary <- parquet.files$summary |> 
+  # Filtramos partidos previos a fase de grupos
+  filter(Match_Date > "2024-03-15") |> 
+  # Partidos Jugados por el equipo del jugador
+  group_by(Team) |> 
+  mutate(Total_Partidos_Jugados_Equipo = n_distinct(Game_URL)) |> 
+  # No se consideran alargues
+  mutate(Total_Minutos_Jugados_Equipo = 90*Total_Partidos_Jugados_Equipo) |> 
+  ungroup() |> 
+  # Total minutos jugados por jugador y tiempo promedio por partido
+  group_by(Player) |> 
+  mutate(Total_Minutos = sum(Min)) |> 
+  mutate(Total_Partidos_Jugados_Jugador = n_distinct(Game_URL)) |> 
+  mutate(Promedio_Minutos_x_PartidoJugado = 90 * (Total_Minutos/(Total_Minutos_Jugados_Equipo))) |>
+  mutate(Ind_Prom_Mas_30min_x_Partido = ifelse(Promedio_Minutos_x_PartidoJugado >= 30, 1, 0)) |> 
+  ungroup()
+  
+```
+
 
 # Resumen
 
-## Row 
-
-### Column 
+## Row {height="70%" .tabset}
 
 ```{r}
-print("hola22")
+#| label: Tabla-Goleadores
+#| title: "Goleadores"
+
+player.summary |> 
+  group_by(Player) |> 
+  summarise(Total_Goles = sum(Gls),
+            Total_Asistencias = sum(Ast),
+            Total_GA = sum(Gls)+sum(Ast),
+            Total_Tiros = sum(Sh),
+            Total_Tiros_a_Puerta = sum(SoT),
+            Total_XG = sum(xG_Expected)) |> 
+  mutate(Ratio_G_XG = round(Total_Goles / Total_XG,2)) |> 
+  # Columna de ranking de Goleadores
+  mutate(Posicion_Goleador = dense_rank(desc(Total_Goles))) |>
+  arrange(Posicion_Goleador) |> 
+  ungroup() |> 
+  gt(
+     groupname_col = "Posicion_Goleador" , 
+     row_group_as_column = TRUE) |>
+  cols_label(Total_Goles ~ "Goles",
+             Total_Asistencias ~ "Asistencias",
+             Total_GA ~ "G+A",
+             Total_Tiros ~ "Tiros",
+             Total_Tiros_a_Puerta ~ "Tiros al arco",
+             Total_XG ~ "xG",
+             Ratio_G_XG ~ "Goles/xG"
+             ) |> 
+  gt_theme_dark()
+
+
+  
+  
 ```
 
-### Column - Hola
+```{r}
+#| label: Tabla-Goleadores-P90MIN
+#| title: "Asistencias"
+
+player.summary |>
+  # Para alinear segun criterio opta se filtran aqui cualquier jugador que haya jugado < 30 minutos algun partido
+  group_by(Player) |>
+  filter(min(Min) >= 30 & Ind_Prom_Mas_30min_x_Partido) |> 
+  summarise(Total_Goles_90 = round(90*(sum(Gls)) / (sum(Min))),2) |> 
+  arrange(desc(Total_Goles_90)) |> 
+  gt() |>
+  gt_theme_espn()
+
+  
+```
+
+## Row {height="30%"}
 
 ```{r}
 print("hola")
 ```
-
-## Row
-
 
 
 # Equipos
