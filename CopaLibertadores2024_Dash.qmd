@@ -382,7 +382,7 @@ filter_subcampeon = res_equipo_js.filter(d => d.LastTeam === Equipo_Subcampeon)
 // Tarjeta Campeon
 
 html`${filter_campeon.map(d =>
-`    <div class="container-fluid py-2">
+`    <div class="container-fluid py-2qua">
         <div class="card shadow">
             <div class="card-header text-white">
                 <div class="d-flex align-items-center">
