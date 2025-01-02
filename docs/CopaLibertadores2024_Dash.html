@@ -71,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-24197b291d2a8fa431ae545f0db53396.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-33a2fcfed9213f271b8602f5002268e6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-881d35170bf89d175e37c11945c90fa0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="site_libs/quarto-dashboard/stickythead.js"></script>
 <script src="site_libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
@@ -145,7 +145,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-resumen" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#resumen" data-scrolling="false" href="#resumen" aria-controls="resumen" aria-selected="true"><span class="nav-link-text">Resumen</span></a></li><li class="nav-item" role="presentation"><a id="tab-equipos" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#equipos" data-scrolling="false" href="#equipos" aria-controls="equipos" aria-selected="false"><span class="nav-link-text">Equipos</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-resumen" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#resumen" data-scrolling="false" href="#resumen" aria-controls="resumen" aria-selected="true"><span class="nav-link-text">Resumen</span></a></li><li class="nav-item" role="presentation"><a id="tab-equipos" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#equipos" data-scrolling="false" href="#equipos" aria-controls="equipos" aria-selected="false"><span class="nav-link-text">Equipos</span></a></li></ul><div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="https://samuelb1992.github.io/"><i class="bi bi-house-door-fill"></i></a><a class="quarto-dashboard-link" href="https://github.com/Samuelb1992/copalibertadores2024"><i class="bi bi-github"></i></a></div></div></div>
 </nav>
 </header>
 <div id="quarto-search-results"></div>
@@ -156,8 +156,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 
 <div class="cell hidden bslib-grid-item html-fill-item">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="361" data-source-offset="-47"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 360;"><span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>match_agg_js <span class="op">=</span> <span class="fu">transpose</span>(match_agg_data)</span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>res_equipo_js <span class="op">=</span> <span class="fu">transpose</span>(res_equipo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="366" data-source-offset="-47"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 365;"><span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>match_agg_js <span class="op">=</span> <span class="fu">transpose</span>(match_agg_data)</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>res_equipo_js <span class="op">=</span> <span class="fu">transpose</span>(res_equipo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -181,55 +181,55 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="cell card-body html-fill-item html-fill-container">
-<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb2" data-startfrom="374" data-source-offset="-35"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 373;"><span id="cb2-374"><a href="#cb2-374" aria-hidden="true" tabindex="-1"></a>Equipo_Campeon <span class="op">=</span> <span class="st">"Botafogo (RJ)"</span></span>
-<span id="cb2-375"><a href="#cb2-375" aria-hidden="true" tabindex="-1"></a>Equipo_Subcampeon <span class="op">=</span> <span class="st">"Atlético Mineiro"</span></span>
-<span id="cb2-376"><a href="#cb2-376" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-377"><a href="#cb2-377" aria-hidden="true" tabindex="-1"></a>filter_campeon <span class="op">=</span> res_equipo_js<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">LastTeam</span> <span class="op">===</span> Equipo_Campeon)</span>
-<span id="cb2-378"><a href="#cb2-378" aria-hidden="true" tabindex="-1"></a>filter_subcampeon <span class="op">=</span> res_equipo_js<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">LastTeam</span> <span class="op">===</span> Equipo_Subcampeon)</span>
-<span id="cb2-379"><a href="#cb2-379" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-380"><a href="#cb2-380" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta condicional</span></span>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb2" data-startfrom="379" data-source-offset="-35"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 378;"><span id="cb2-379"><a href="#cb2-379" aria-hidden="true" tabindex="-1"></a>Equipo_Campeon <span class="op">=</span> <span class="st">"Botafogo (RJ)"</span></span>
+<span id="cb2-380"><a href="#cb2-380" aria-hidden="true" tabindex="-1"></a>Equipo_Subcampeon <span class="op">=</span> <span class="st">"Atlético Mineiro"</span></span>
 <span id="cb2-381"><a href="#cb2-381" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-382"><a href="#cb2-382" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta Campeon</span></span>
-<span id="cb2-383"><a href="#cb2-383" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-384"><a href="#cb2-384" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>filter_campeon<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span></span>
-<span id="cb2-385"><a href="#cb2-385" aria-hidden="true" tabindex="-1"></a><span class="vs">`    &lt;div class="container-fluid py-2"&gt;</span></span>
-<span id="cb2-386"><a href="#cb2-386" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="card shadow"&gt;</span></span>
-<span id="cb2-387"><a href="#cb2-387" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-header text-white"&gt;</span></span>
-<span id="cb2-388"><a href="#cb2-388" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb2-389"><a href="#cb2-389" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div class = "icon-div"&gt;</span></span>
-<span id="cb2-390"><a href="#cb2-390" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;i class="fa fa-trophy champion-icon" aria-hidden="true"&gt;&lt;/i&gt;</span></span>
-<span id="cb2-391"><a href="#cb2-391" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;p&gt;1º&lt;/p&gt;</span></span>
-<span id="cb2-392"><a href="#cb2-392" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;/div&gt;</span></span>
-<span id="cb2-393"><a href="#cb2-393" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;img src="</span><span class="sc">${</span>d<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">?height=60&amp;width=60" alt="Team Logo" class="team-logo me-3"&gt;</span></span>
-<span id="cb2-394"><a href="#cb2-394" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="flex-grow-1 overflow-hidden"&gt;</span></span>
-<span id="cb2-395"><a href="#cb2-395" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;h2 class="mb-0 team-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">LastTeam</span><span class="sc">}</span><span class="vs">&lt;/h2&gt;</span></span>
-<span id="cb2-396"><a href="#cb2-396" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb2-397"><a href="#cb2-397" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb2-398"><a href="#cb2-398" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
-<span id="cb2-399"><a href="#cb2-399" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-body"&gt;</span></span>
-<span id="cb2-400"><a href="#cb2-400" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb2-401"><a href="#cb2-401" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb2-402"><a href="#cb2-402" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;⚽&lt;/div&gt;</span></span>
-<span id="cb2-403"><a href="#cb2-403" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb2-404"><a href="#cb2-404" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Goleador(es)&lt;/h6&gt;</span></span>
-<span id="cb2-405"><a href="#cb2-405" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Goles</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb2-406"><a href="#cb2-406" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Goles</span><span class="sc">}</span><span class="vs"> Goles&lt;/small&gt;</span></span>
-<span id="cb2-407"><a href="#cb2-407" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb2-408"><a href="#cb2-408" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb2-409"><a href="#cb2-409" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb2-410"><a href="#cb2-410" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb2-411"><a href="#cb2-411" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb2-412"><a href="#cb2-412" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;👟&lt;/div&gt;</span></span>
-<span id="cb2-413"><a href="#cb2-413" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb2-414"><a href="#cb2-414" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Máximo Asistidor&lt;/h6&gt;</span></span>
-<span id="cb2-415"><a href="#cb2-415" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb2-416"><a href="#cb2-416" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs"> Asistencias&lt;/small&gt;</span></span>
-<span id="cb2-417"><a href="#cb2-417" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb2-418"><a href="#cb2-418" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb2-419"><a href="#cb2-419" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb2-420"><a href="#cb2-420" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
-<span id="cb2-421"><a href="#cb2-421" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
-<span id="cb2-422"><a href="#cb2-422" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span>)<span class="sc">}</span><span class="vs">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-382"><a href="#cb2-382" aria-hidden="true" tabindex="-1"></a>filter_campeon <span class="op">=</span> res_equipo_js<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">LastTeam</span> <span class="op">===</span> Equipo_Campeon)</span>
+<span id="cb2-383"><a href="#cb2-383" aria-hidden="true" tabindex="-1"></a>filter_subcampeon <span class="op">=</span> res_equipo_js<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">LastTeam</span> <span class="op">===</span> Equipo_Subcampeon)</span>
+<span id="cb2-384"><a href="#cb2-384" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-385"><a href="#cb2-385" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta condicional</span></span>
+<span id="cb2-386"><a href="#cb2-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-387"><a href="#cb2-387" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta Campeon</span></span>
+<span id="cb2-388"><a href="#cb2-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-389"><a href="#cb2-389" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>filter_campeon<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span></span>
+<span id="cb2-390"><a href="#cb2-390" aria-hidden="true" tabindex="-1"></a><span class="vs">`    &lt;div class="container-fluid py-2qua"&gt;</span></span>
+<span id="cb2-391"><a href="#cb2-391" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="card shadow"&gt;</span></span>
+<span id="cb2-392"><a href="#cb2-392" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-header text-white"&gt;</span></span>
+<span id="cb2-393"><a href="#cb2-393" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb2-394"><a href="#cb2-394" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div class = "icon-div"&gt;</span></span>
+<span id="cb2-395"><a href="#cb2-395" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;i class="fa fa-trophy champion-icon" aria-hidden="true"&gt;&lt;/i&gt;</span></span>
+<span id="cb2-396"><a href="#cb2-396" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;p&gt;1º&lt;/p&gt;</span></span>
+<span id="cb2-397"><a href="#cb2-397" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;/div&gt;</span></span>
+<span id="cb2-398"><a href="#cb2-398" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;img src="</span><span class="sc">${</span>d<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">?height=60&amp;width=60" alt="Team Logo" class="team-logo me-3"&gt;</span></span>
+<span id="cb2-399"><a href="#cb2-399" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="flex-grow-1 overflow-hidden"&gt;</span></span>
+<span id="cb2-400"><a href="#cb2-400" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;h2 class="mb-0 team-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">LastTeam</span><span class="sc">}</span><span class="vs">&lt;/h2&gt;</span></span>
+<span id="cb2-401"><a href="#cb2-401" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb2-402"><a href="#cb2-402" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb2-403"><a href="#cb2-403" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
+<span id="cb2-404"><a href="#cb2-404" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-body"&gt;</span></span>
+<span id="cb2-405"><a href="#cb2-405" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb2-406"><a href="#cb2-406" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb2-407"><a href="#cb2-407" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;⚽&lt;/div&gt;</span></span>
+<span id="cb2-408"><a href="#cb2-408" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb2-409"><a href="#cb2-409" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Goleador(es)&lt;/h6&gt;</span></span>
+<span id="cb2-410"><a href="#cb2-410" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Goles</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb2-411"><a href="#cb2-411" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Goles</span><span class="sc">}</span><span class="vs"> Goles&lt;/small&gt;</span></span>
+<span id="cb2-412"><a href="#cb2-412" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
+<span id="cb2-413"><a href="#cb2-413" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb2-414"><a href="#cb2-414" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb2-415"><a href="#cb2-415" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb2-416"><a href="#cb2-416" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb2-417"><a href="#cb2-417" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;👟&lt;/div&gt;</span></span>
+<span id="cb2-418"><a href="#cb2-418" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb2-419"><a href="#cb2-419" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Máximo Asistidor&lt;/h6&gt;</span></span>
+<span id="cb2-420"><a href="#cb2-420" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb2-421"><a href="#cb2-421" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs"> Asistencias&lt;/small&gt;</span></span>
+<span id="cb2-422"><a href="#cb2-422" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
+<span id="cb2-423"><a href="#cb2-423" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb2-424"><a href="#cb2-424" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb2-425"><a href="#cb2-425" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
+<span id="cb2-426"><a href="#cb2-426" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb2-427"><a href="#cb2-427" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span>)<span class="sc">}</span><span class="vs">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div class="html-fill-item html-fill-container">
 <div id="ojs-cell-2-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
@@ -267,47 +267,47 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 <div class="cell card-body html-fill-item html-fill-container">
-<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb3" data-startfrom="426" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 425;"><span id="cb3-426"><a href="#cb3-426" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta SUBCampeon</span></span>
-<span id="cb3-427"><a href="#cb3-427" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-428"><a href="#cb3-428" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>filter_subcampeon<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span></span>
-<span id="cb3-429"><a href="#cb3-429" aria-hidden="true" tabindex="-1"></a><span class="vs">`    &lt;div class="container-fluid py-2"&gt;</span></span>
-<span id="cb3-430"><a href="#cb3-430" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="card shadow"&gt;</span></span>
-<span id="cb3-431"><a href="#cb3-431" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-header text-white"&gt;</span></span>
-<span id="cb3-432"><a href="#cb3-432" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb3-433"><a href="#cb3-433" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div class = "icon-div"&gt;</span></span>
-<span id="cb3-434"><a href="#cb3-434" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;i class="fa-solid fa-medal second-icon"&gt;&lt;/i&gt;</span></span>
-<span id="cb3-435"><a href="#cb3-435" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;p&gt;2º&lt;/p&gt;</span></span>
-<span id="cb3-436"><a href="#cb3-436" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;/div&gt;</span></span>
-<span id="cb3-437"><a href="#cb3-437" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;img src="</span><span class="sc">${</span>d<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">?height=60&amp;width=60" alt="Team Logo" class="team-logo me-3"&gt;</span></span>
-<span id="cb3-438"><a href="#cb3-438" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="flex-grow-1 overflow-hidden"&gt;</span></span>
-<span id="cb3-439"><a href="#cb3-439" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;h2 class="mb-0 team-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">LastTeam</span><span class="sc">}</span><span class="vs">&lt;/h2&gt;</span></span>
-<span id="cb3-440"><a href="#cb3-440" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb3-441"><a href="#cb3-441" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb3-442"><a href="#cb3-442" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
-<span id="cb3-443"><a href="#cb3-443" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-body"&gt;</span></span>
-<span id="cb3-444"><a href="#cb3-444" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb3-445"><a href="#cb3-445" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb3-446"><a href="#cb3-446" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;⚽&lt;/div&gt;</span></span>
-<span id="cb3-447"><a href="#cb3-447" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb3-448"><a href="#cb3-448" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Goleador(es)&lt;/h6&gt;</span></span>
-<span id="cb3-449"><a href="#cb3-449" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Goles</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb3-450"><a href="#cb3-450" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Goles</span><span class="sc">}</span><span class="vs"> Goles&lt;/small&gt;</span></span>
-<span id="cb3-451"><a href="#cb3-451" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb3-452"><a href="#cb3-452" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb3-453"><a href="#cb3-453" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb3-454"><a href="#cb3-454" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb3-455"><a href="#cb3-455" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb3-456"><a href="#cb3-456" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;👟&lt;/div&gt;</span></span>
-<span id="cb3-457"><a href="#cb3-457" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb3-458"><a href="#cb3-458" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Máximo Asistidor&lt;/h6&gt;</span></span>
-<span id="cb3-459"><a href="#cb3-459" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb3-460"><a href="#cb3-460" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs"> Asistencias&lt;/small&gt;</span></span>
-<span id="cb3-461"><a href="#cb3-461" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb3-462"><a href="#cb3-462" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb3-463"><a href="#cb3-463" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb3-464"><a href="#cb3-464" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
-<span id="cb3-465"><a href="#cb3-465" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
-<span id="cb3-466"><a href="#cb3-466" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span>)<span class="sc">}</span><span class="vs">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb3" data-startfrom="431" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 430;"><span id="cb3-431"><a href="#cb3-431" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta SUBCampeon</span></span>
+<span id="cb3-432"><a href="#cb3-432" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-433"><a href="#cb3-433" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>filter_subcampeon<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span></span>
+<span id="cb3-434"><a href="#cb3-434" aria-hidden="true" tabindex="-1"></a><span class="vs">`    &lt;div class="container-fluid py-2"&gt;</span></span>
+<span id="cb3-435"><a href="#cb3-435" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="card shadow"&gt;</span></span>
+<span id="cb3-436"><a href="#cb3-436" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-header text-white"&gt;</span></span>
+<span id="cb3-437"><a href="#cb3-437" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb3-438"><a href="#cb3-438" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;div class = "icon-div"&gt;</span></span>
+<span id="cb3-439"><a href="#cb3-439" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;i class="fa-solid fa-medal second-icon"&gt;&lt;/i&gt;</span></span>
+<span id="cb3-440"><a href="#cb3-440" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;p&gt;2º&lt;/p&gt;</span></span>
+<span id="cb3-441"><a href="#cb3-441" aria-hidden="true" tabindex="-1"></a><span class="vs">                  &lt;/div&gt;</span></span>
+<span id="cb3-442"><a href="#cb3-442" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;img src="</span><span class="sc">${</span>d<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">?height=60&amp;width=60" alt="Team Logo" class="team-logo me-3"&gt;</span></span>
+<span id="cb3-443"><a href="#cb3-443" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="flex-grow-1 overflow-hidden"&gt;</span></span>
+<span id="cb3-444"><a href="#cb3-444" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;h2 class="mb-0 team-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">LastTeam</span><span class="sc">}</span><span class="vs">&lt;/h2&gt;</span></span>
+<span id="cb3-445"><a href="#cb3-445" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb3-446"><a href="#cb3-446" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb3-447"><a href="#cb3-447" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
+<span id="cb3-448"><a href="#cb3-448" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-body"&gt;</span></span>
+<span id="cb3-449"><a href="#cb3-449" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb3-450"><a href="#cb3-450" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb3-451"><a href="#cb3-451" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;⚽&lt;/div&gt;</span></span>
+<span id="cb3-452"><a href="#cb3-452" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb3-453"><a href="#cb3-453" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Goleador(es)&lt;/h6&gt;</span></span>
+<span id="cb3-454"><a href="#cb3-454" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Goles</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb3-455"><a href="#cb3-455" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Goles</span><span class="sc">}</span><span class="vs"> Goles&lt;/small&gt;</span></span>
+<span id="cb3-456"><a href="#cb3-456" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
+<span id="cb3-457"><a href="#cb3-457" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb3-458"><a href="#cb3-458" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb3-459"><a href="#cb3-459" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb3-460"><a href="#cb3-460" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb3-461"><a href="#cb3-461" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;👟&lt;/div&gt;</span></span>
+<span id="cb3-462"><a href="#cb3-462" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb3-463"><a href="#cb3-463" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Máximo Asistidor&lt;/h6&gt;</span></span>
+<span id="cb3-464"><a href="#cb3-464" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb3-465"><a href="#cb3-465" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs"> Asistencias&lt;/small&gt;</span></span>
+<span id="cb3-466"><a href="#cb3-466" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
+<span id="cb3-467"><a href="#cb3-467" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb3-468"><a href="#cb3-468" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb3-469"><a href="#cb3-469" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
+<span id="cb3-470"><a href="#cb3-470" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb3-471"><a href="#cb3-471" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span>)<span class="sc">}</span><span class="vs">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div id="ojs-cell-3" data-nodetype="expression" class="html-fill-item html-fill-container">
 
@@ -323,26 +323,26 @@ grid-auto-rows: minmax(0, 1fr);">
 
 <div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-2"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-2-1"><div class="card-body html-fill-item html-fill-container" data-title="Goleadores">
 <div class="cell-output-display html-fill-item html-fill-container">
-<div id="hzjpuagelw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;" class="html-fill-item html-fill-container">
+<div id="fudrebatkw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;" class="html-fill-item html-fill-container">
 <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#hzjpuagelw table {
+#fudrebatkw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hzjpuagelw thead, #hzjpuagelw tbody, #hzjpuagelw tfoot, #hzjpuagelw tr, #hzjpuagelw td, #hzjpuagelw th {
+#fudrebatkw thead, #fudrebatkw tbody, #fudrebatkw tfoot, #fudrebatkw tr, #fudrebatkw td, #fudrebatkw th {
   border-style: none;
 }
 
-#hzjpuagelw p {
+#fudrebatkw p {
   margin: 0;
   padding: 0;
 }
 
-#hzjpuagelw .gt_table {
+#fudrebatkw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -368,12 +368,12 @@ grid-auto-rows: minmax(0, 1fr);">
   border-left-color: #333333;
 }
 
-#hzjpuagelw .gt_caption {
+#fudrebatkw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hzjpuagelw .gt_title {
+#fudrebatkw .gt_title {
   color: #FFFFFF;
   font-size: 125%;
   font-weight: initial;
@@ -385,7 +385,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-width: 0;
 }
 
-#hzjpuagelw .gt_subtitle {
+#fudrebatkw .gt_subtitle {
   color: #FFFFFF;
   font-size: 85%;
   font-weight: initial;
@@ -397,7 +397,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-top-width: 0;
 }
 
-#hzjpuagelw .gt_heading {
+#fudrebatkw .gt_heading {
   background-color: #333333;
   text-align: left;
   border-bottom-color: #333333;
@@ -409,13 +409,13 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_bottom_border {
+#fudrebatkw .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_col_headings {
+#fudrebatkw .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -430,7 +430,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_col_heading {
+#fudrebatkw .gt_col_heading {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -450,7 +450,7 @@ grid-auto-rows: minmax(0, 1fr);">
   overflow-x: hidden;
 }
 
-#hzjpuagelw .gt_column_spanner_outer {
+#fudrebatkw .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -462,15 +462,15 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 4px;
 }
 
-#hzjpuagelw .gt_column_spanner_outer:first-child {
+#fudrebatkw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hzjpuagelw .gt_column_spanner_outer:last-child {
+#fudrebatkw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hzjpuagelw .gt_column_spanner {
+#fudrebatkw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-bottom-color: #FFFFFF;
@@ -482,11 +482,11 @@ grid-auto-rows: minmax(0, 1fr);">
   width: 100%;
 }
 
-#hzjpuagelw .gt_spanner_row {
+#fudrebatkw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hzjpuagelw .gt_group_heading {
+#fudrebatkw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -512,7 +512,7 @@ grid-auto-rows: minmax(0, 1fr);">
   text-align: left;
 }
 
-#hzjpuagelw .gt_empty_group_heading {
+#fudrebatkw .gt_empty_group_heading {
   padding: 0.5px;
   color: #FFFFFF;
   background-color: #333333;
@@ -527,15 +527,15 @@ grid-auto-rows: minmax(0, 1fr);">
   vertical-align: middle;
 }
 
-#hzjpuagelw .gt_from_md > :first-child {
+#fudrebatkw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hzjpuagelw .gt_from_md > :last-child {
+#fudrebatkw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hzjpuagelw .gt_row {
+#fudrebatkw .gt_row {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 5px;
@@ -554,7 +554,7 @@ grid-auto-rows: minmax(0, 1fr);">
   overflow-x: hidden;
 }
 
-#hzjpuagelw .gt_stub {
+#fudrebatkw .gt_stub {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -567,7 +567,7 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#hzjpuagelw .gt_stub_row_group {
+#fudrebatkw .gt_stub_row_group {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -581,15 +581,15 @@ grid-auto-rows: minmax(0, 1fr);">
   vertical-align: top;
 }
 
-#hzjpuagelw .gt_row_group_first td {
+#fudrebatkw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hzjpuagelw .gt_row_group_first th {
+#fudrebatkw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hzjpuagelw .gt_summary_row {
+#fudrebatkw .gt_summary_row {
   color: #FFFFFF;
   background-color: #333333;
   text-transform: inherit;
@@ -599,16 +599,16 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#hzjpuagelw .gt_first_summary_row {
+#fudrebatkw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_first_summary_row.thick {
+#fudrebatkw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hzjpuagelw .gt_last_summary_row {
+#fudrebatkw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -618,7 +618,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_grand_summary_row {
+#fudrebatkw .gt_grand_summary_row {
   color: #FFFFFF;
   background-color: #333333;
   text-transform: inherit;
@@ -628,7 +628,7 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#hzjpuagelw .gt_first_grand_summary_row {
+#fudrebatkw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -638,7 +638,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-top-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_last_grand_summary_row_top {
+#fudrebatkw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -648,11 +648,11 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_striped {
+#fudrebatkw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hzjpuagelw .gt_table_body {
+#fudrebatkw .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -661,7 +661,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-color: #333333;
 }
 
-#hzjpuagelw .gt_footnotes {
+#fudrebatkw .gt_footnotes {
   color: #FFFFFF;
   background-color: #333333;
   border-bottom-style: none;
@@ -675,7 +675,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_footnote {
+#fudrebatkw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -684,7 +684,7 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#hzjpuagelw .gt_sourcenotes {
+#fudrebatkw .gt_sourcenotes {
   color: #FFFFFF;
   background-color: #333333;
   border-bottom-style: none;
@@ -698,7 +698,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#hzjpuagelw .gt_sourcenote {
+#fudrebatkw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -706,72 +706,72 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#hzjpuagelw .gt_left {
+#fudrebatkw .gt_left {
   text-align: left;
 }
 
-#hzjpuagelw .gt_center {
+#fudrebatkw .gt_center {
   text-align: center;
 }
 
-#hzjpuagelw .gt_right {
+#fudrebatkw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hzjpuagelw .gt_font_normal {
+#fudrebatkw .gt_font_normal {
   font-weight: normal;
 }
 
-#hzjpuagelw .gt_font_bold {
+#fudrebatkw .gt_font_bold {
   font-weight: bold;
 }
 
-#hzjpuagelw .gt_font_italic {
+#fudrebatkw .gt_font_italic {
   font-style: italic;
 }
 
-#hzjpuagelw .gt_super {
+#fudrebatkw .gt_super {
   font-size: 65%;
 }
 
-#hzjpuagelw .gt_footnote_marks {
+#fudrebatkw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hzjpuagelw .gt_asterisk {
+#fudrebatkw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hzjpuagelw .gt_indent_1 {
+#fudrebatkw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hzjpuagelw .gt_indent_2 {
+#fudrebatkw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hzjpuagelw .gt_indent_3 {
+#fudrebatkw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hzjpuagelw .gt_indent_4 {
+#fudrebatkw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hzjpuagelw .gt_indent_5 {
+#fudrebatkw .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hzjpuagelw .katex-display {
+#fudrebatkw .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hzjpuagelw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fudrebatkw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -936,26 +936,26 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-2-2"><div class="card-body html-fill-item html-fill-container" data-title="Asistencias">
 <div class="cell-output-display html-fill-item html-fill-container">
-<div id="fofsiynhhw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;" class="html-fill-item html-fill-container">
+<div id="eevaohgwvu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;" class="html-fill-item html-fill-container">
 <style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#fofsiynhhw table {
+#eevaohgwvu table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fofsiynhhw thead, #fofsiynhhw tbody, #fofsiynhhw tfoot, #fofsiynhhw tr, #fofsiynhhw td, #fofsiynhhw th {
+#eevaohgwvu thead, #eevaohgwvu tbody, #eevaohgwvu tfoot, #eevaohgwvu tr, #eevaohgwvu td, #eevaohgwvu th {
   border-style: none;
 }
 
-#fofsiynhhw p {
+#eevaohgwvu p {
   margin: 0;
   padding: 0;
 }
 
-#fofsiynhhw .gt_table {
+#eevaohgwvu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -981,12 +981,12 @@ grid-auto-rows: minmax(0, 1fr);">
   border-left-color: #333333;
 }
 
-#fofsiynhhw .gt_caption {
+#eevaohgwvu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fofsiynhhw .gt_title {
+#eevaohgwvu .gt_title {
   color: #FFFFFF;
   font-size: 125%;
   font-weight: initial;
@@ -998,7 +998,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-width: 0;
 }
 
-#fofsiynhhw .gt_subtitle {
+#eevaohgwvu .gt_subtitle {
   color: #FFFFFF;
   font-size: 85%;
   font-weight: initial;
@@ -1010,7 +1010,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-top-width: 0;
 }
 
-#fofsiynhhw .gt_heading {
+#eevaohgwvu .gt_heading {
   background-color: #333333;
   text-align: left;
   border-bottom-color: #333333;
@@ -1022,13 +1022,13 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_bottom_border {
+#eevaohgwvu .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_col_headings {
+#eevaohgwvu .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1043,7 +1043,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_col_heading {
+#eevaohgwvu .gt_col_heading {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -1063,7 +1063,7 @@ grid-auto-rows: minmax(0, 1fr);">
   overflow-x: hidden;
 }
 
-#fofsiynhhw .gt_column_spanner_outer {
+#eevaohgwvu .gt_column_spanner_outer {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -1075,15 +1075,15 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 4px;
 }
 
-#fofsiynhhw .gt_column_spanner_outer:first-child {
+#eevaohgwvu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fofsiynhhw .gt_column_spanner_outer:last-child {
+#eevaohgwvu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fofsiynhhw .gt_column_spanner {
+#eevaohgwvu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-bottom-color: #FFFFFF;
@@ -1095,11 +1095,11 @@ grid-auto-rows: minmax(0, 1fr);">
   width: 100%;
 }
 
-#fofsiynhhw .gt_spanner_row {
+#eevaohgwvu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fofsiynhhw .gt_group_heading {
+#eevaohgwvu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1125,7 +1125,7 @@ grid-auto-rows: minmax(0, 1fr);">
   text-align: left;
 }
 
-#fofsiynhhw .gt_empty_group_heading {
+#eevaohgwvu .gt_empty_group_heading {
   padding: 0.5px;
   color: #FFFFFF;
   background-color: #333333;
@@ -1140,15 +1140,15 @@ grid-auto-rows: minmax(0, 1fr);">
   vertical-align: middle;
 }
 
-#fofsiynhhw .gt_from_md > :first-child {
+#eevaohgwvu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fofsiynhhw .gt_from_md > :last-child {
+#eevaohgwvu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fofsiynhhw .gt_row {
+#eevaohgwvu .gt_row {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 5px;
@@ -1167,7 +1167,7 @@ grid-auto-rows: minmax(0, 1fr);">
   overflow-x: hidden;
 }
 
-#fofsiynhhw .gt_stub {
+#eevaohgwvu .gt_stub {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -1180,7 +1180,7 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#fofsiynhhw .gt_stub_row_group {
+#eevaohgwvu .gt_stub_row_group {
   color: #FFFFFF;
   background-color: #333333;
   font-size: 100%;
@@ -1194,15 +1194,15 @@ grid-auto-rows: minmax(0, 1fr);">
   vertical-align: top;
 }
 
-#fofsiynhhw .gt_row_group_first td {
+#eevaohgwvu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fofsiynhhw .gt_row_group_first th {
+#eevaohgwvu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fofsiynhhw .gt_summary_row {
+#eevaohgwvu .gt_summary_row {
   color: #FFFFFF;
   background-color: #333333;
   text-transform: inherit;
@@ -1212,16 +1212,16 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#fofsiynhhw .gt_first_summary_row {
+#eevaohgwvu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_first_summary_row.thick {
+#eevaohgwvu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fofsiynhhw .gt_last_summary_row {
+#eevaohgwvu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1231,7 +1231,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_grand_summary_row {
+#eevaohgwvu .gt_grand_summary_row {
   color: #FFFFFF;
   background-color: #333333;
   text-transform: inherit;
@@ -1241,7 +1241,7 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#fofsiynhhw .gt_first_grand_summary_row {
+#eevaohgwvu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1251,7 +1251,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-top-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_last_grand_summary_row_top {
+#eevaohgwvu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1261,11 +1261,11 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_striped {
+#eevaohgwvu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fofsiynhhw .gt_table_body {
+#eevaohgwvu .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1274,7 +1274,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-bottom-color: #333333;
 }
 
-#fofsiynhhw .gt_footnotes {
+#eevaohgwvu .gt_footnotes {
   color: #FFFFFF;
   background-color: #333333;
   border-bottom-style: none;
@@ -1288,7 +1288,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_footnote {
+#eevaohgwvu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1297,7 +1297,7 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#fofsiynhhw .gt_sourcenotes {
+#eevaohgwvu .gt_sourcenotes {
   color: #FFFFFF;
   background-color: #333333;
   border-bottom-style: none;
@@ -1311,7 +1311,7 @@ grid-auto-rows: minmax(0, 1fr);">
   border-right-color: #D3D3D3;
 }
 
-#fofsiynhhw .gt_sourcenote {
+#eevaohgwvu .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1319,72 +1319,72 @@ grid-auto-rows: minmax(0, 1fr);">
   padding-right: 5px;
 }
 
-#fofsiynhhw .gt_left {
+#eevaohgwvu .gt_left {
   text-align: left;
 }
 
-#fofsiynhhw .gt_center {
+#eevaohgwvu .gt_center {
   text-align: center;
 }
 
-#fofsiynhhw .gt_right {
+#eevaohgwvu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fofsiynhhw .gt_font_normal {
+#eevaohgwvu .gt_font_normal {
   font-weight: normal;
 }
 
-#fofsiynhhw .gt_font_bold {
+#eevaohgwvu .gt_font_bold {
   font-weight: bold;
 }
 
-#fofsiynhhw .gt_font_italic {
+#eevaohgwvu .gt_font_italic {
   font-style: italic;
 }
 
-#fofsiynhhw .gt_super {
+#eevaohgwvu .gt_super {
   font-size: 65%;
 }
 
-#fofsiynhhw .gt_footnote_marks {
+#eevaohgwvu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fofsiynhhw .gt_asterisk {
+#eevaohgwvu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fofsiynhhw .gt_indent_1 {
+#eevaohgwvu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fofsiynhhw .gt_indent_2 {
+#eevaohgwvu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fofsiynhhw .gt_indent_3 {
+#eevaohgwvu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fofsiynhhw .gt_indent_4 {
+#eevaohgwvu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fofsiynhhw .gt_indent_5 {
+#eevaohgwvu .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fofsiynhhw .katex-display {
+#eevaohgwvu .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fofsiynhhw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#eevaohgwvu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1508,8 +1508,8 @@ Resumen Equipos
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output-display html-fill-item html-fill-container">
-<div class="reactable html-widget html-fill-item html-fill-container" id="htmlwidget-1f1cb82b35ec485af444" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-1f1cb82b35ec485af444">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"url":["https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAcademia+Puerto+Cabello.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlianza+Lima.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlways+Ready.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAtl%C3%A9tico+Mineiro.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAurora.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBarcelona+S.C.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBol%C3%ADvar.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBotafogo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCaracas+F%C3%BAtbol+Club.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCerro+Porte%C3%B1o.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCobresal.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FColo+Colo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDefensor+Sporting.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDeportivo+T%C3%A1chira.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCD+El+Nacional.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FEstudiantes.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFlamengo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFluminense.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGodoy+Cruz.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGremio+de+Porto+Alegre.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FHuachipato.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FIndependiente+del+Valle.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FJunior.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiga+Quito.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLibertad.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiverpool+F.C.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFBC+Melgar.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FMillonarios.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional+de+Montevideo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FClub+Nacional.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalestino.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalmeiras.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPe%C3%B1arol.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPortuguesa+F.C.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBragantino.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRionegro+%C3%81guilas.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRiver+Plate.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRosario+Central.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAucas.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSan+Lorenzo+de+Almagro.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSporting+Cristal.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSportivo+Trinidense.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FS%C3%A3o+Paulo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FTalleres.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FThe+Strongest.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FUniversitario+de+Deportes.png"],"Home_Team":["Academia Puerto Cabello","Alianza Lima","Always Ready","Atlético Mineiro","Atlético Nacional","Aurora","Barcelona","Bolívar","Botafogo (RJ)","Caracas","Cerro Porteño","Cobresal","Colo-Colo","Defensor Sporting","Deportivo Táchira","El Nacional","Estudiantes (LP)","Flamengo","Fluminense","Godoy Cruz","Grêmio","Huachipato","Independiente del Valle","Junior","LDU de Quito","Libertad","Liverpool","Melgar","Millonarios","Nacional","Nacional Asunción","Palestino","Palmeiras","Peñarol","Portuguesa","Red Bull Bragantino","Rionegro","River Plate","Rosario Central","SD Aucas","San Lorenzo","Sporting Cristal","Sportivo Trinidense","São Paulo","Talleres","The Strongest","Universitario"],"Total_Partidos":[4,6,4,13,2,4,6,8,17,6,6,6,14,2,6,2,6,10,10,2,8,6,6,8,6,6,6,2,6,12,6,10,8,12,2,4,2,12,6,2,8,2,4,10,8,8,6],"Total_Victorias":[1,0,2,8,0,1,1,5,8,0,1,0,5,1,0,0,1,4,6,0,4,2,2,2,2,2,1,0,0,6,4,5,4,7,0,0,0,8,2,1,2,1,1,5,4,4,1],"Total_Empates":[0,4,0,2,0,2,3,1,6,1,3,1,6,0,1,1,2,2,2,1,1,2,1,4,1,1,1,1,3,2,0,1,3,1,0,3,2,3,1,0,3,0,2,4,1,1,2],"Total_Derrotas":[3,2,2,3,2,1,2,2,3,5,2,5,3,1,5,1,3,4,2,1,3,2,3,2,3,3,4,1,3,4,2,4,1,4,2,1,0,1,3,1,3,1,1,1,3,3,3],"Total_Goles":[3,5,9,22,0,3,6,14,31,3,4,3,12,3,2,1,7,13,13,0,10,7,8,8,6,7,6,1,6,14,10,13,17,20,2,2,0,17,8,1,7,4,4,13,11,9,5],"Total_Goles_Recibidos":[7,7,6,11,4,8,9,11,17,19,5,11,10,3,11,2,9,6,10,1,8,9,9,7,6,8,14,2,12,11,4,16,9,12,4,3,0,8,7,3,8,7,4,4,9,10,9],"Diferencia_Gol":[-4,-2,3,11,-4,-5,-3,3,14,-16,-1,-8,2,0,-9,-1,-2,7,3,-1,2,-2,-1,1,0,-1,-8,-1,-6,3,6,-3,8,8,-2,-1,0,9,1,-2,-1,-3,0,9,2,-1,-4]},"columns":[{"id":"url","name":"","type":"character","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"sortable":false,"maxWidth":40,"style":[{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAcademia+Puerto+Cabello.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlianza+Lima.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlways+Ready.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAtl%C3%A9tico+Mineiro.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAurora.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBarcelona+S.C.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBol%C3%ADvar.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBotafogo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCaracas+F%C3%BAtbol+Club.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCerro+Porte%C3%B1o.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCobresal.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FColo+Colo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDefensor+Sporting.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDeportivo+T%C3%A1chira.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCD+El+Nacional.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FEstudiantes.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFlamengo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFluminense.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGodoy+Cruz.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGremio+de+Porto+Alegre.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FHuachipato.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FIndependiente+del+Valle.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FJunior.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiga+Quito.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLibertad.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiverpool+F.C.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFBC+Melgar.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FMillonarios.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional+de+Montevideo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FClub+Nacional.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalestino.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalmeiras.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPe%C3%B1arol.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPortuguesa+F.C.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBragantino.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRionegro+%C3%81guilas.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRiver+Plate.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRosario+Central.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAucas.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSan+Lorenzo+de+Almagro.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSporting+Cristal.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSportivo+Trinidense.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FS%C3%A3o+Paulo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FTalleres.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FThe+Strongest.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FUniversitario+de+Deportes.png)"}]},{"id":"Home_Team","name":"EQUIPO","type":"character","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":140},{"id":"Total_Partidos","name":"PJ","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Victorias","name":"G","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Empates","name":"E","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"}},{"id":"Total_Derrotas","name":"D","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Goles","name":"GF","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Goles_Recibidos","name":"GC","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Diferencia_Gol","name":"DG","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50}],"defaultSorted":[{"id":"Home_Team","desc":false}],"defaultPageSize":10,"outlined":true,"inline":true,"theme":{"color":"white","backgroundColor":"#303030","style":{"fontFamily":"Source Sans 3","fontWeight":"400"}},"dataKey":"afe464f4d7d2a7b3d8f4cfb6a05c6149"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item html-fill-container" id="htmlwidget-8c9fda0620d6224df0bb" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8c9fda0620d6224df0bb">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"url":["https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAcademia+Puerto+Cabello.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlianza+Lima.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlways+Ready.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAtl%C3%A9tico+Mineiro.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAurora.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBarcelona+S.C.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBol%C3%ADvar.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBotafogo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCaracas+F%C3%BAtbol+Club.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCerro+Porte%C3%B1o.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCobresal.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FColo+Colo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDefensor+Sporting.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDeportivo+T%C3%A1chira.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCD+El+Nacional.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FEstudiantes.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFlamengo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFluminense.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGodoy+Cruz.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGremio+de+Porto+Alegre.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FHuachipato.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FIndependiente+del+Valle.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FJunior.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiga+Quito.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLibertad.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiverpool+F.C.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFBC+Melgar.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FMillonarios.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional+de+Montevideo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FClub+Nacional.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalestino.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalmeiras.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPe%C3%B1arol.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPortuguesa+F.C.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBragantino.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRionegro+%C3%81guilas.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRiver+Plate.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRosario+Central.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAucas.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSan+Lorenzo+de+Almagro.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSporting+Cristal.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSportivo+Trinidense.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FS%C3%A3o+Paulo.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FTalleres.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FThe+Strongest.png","https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FUniversitario+de+Deportes.png"],"Home_Team":["Academia Puerto Cabello","Alianza Lima","Always Ready","Atlético Mineiro","Atlético Nacional","Aurora","Barcelona","Bolívar","Botafogo (RJ)","Caracas","Cerro Porteño","Cobresal","Colo-Colo","Defensor Sporting","Deportivo Táchira","El Nacional","Estudiantes (LP)","Flamengo","Fluminense","Godoy Cruz","Grêmio","Huachipato","Independiente del Valle","Junior","LDU de Quito","Libertad","Liverpool","Melgar","Millonarios","Nacional","Nacional Asunción","Palestino","Palmeiras","Peñarol","Portuguesa","Red Bull Bragantino","Rionegro","River Plate","Rosario Central","SD Aucas","San Lorenzo","Sporting Cristal","Sportivo Trinidense","São Paulo","Talleres","The Strongest","Universitario"],"Total_Partidos":[4,6,4,13,2,4,6,8,17,6,6,6,14,2,6,2,6,10,10,2,8,6,6,8,6,6,6,2,6,12,6,10,8,12,2,4,2,12,6,2,8,2,4,10,8,8,6],"Total_Victorias":[1,0,2,8,0,1,1,5,8,0,1,0,5,1,0,0,1,4,6,0,4,2,2,2,2,2,1,0,0,6,4,5,4,7,0,0,0,8,2,1,2,1,1,5,4,4,1],"Total_Empates":[0,4,0,2,0,2,3,1,6,1,3,1,6,0,1,1,2,2,2,1,1,2,1,4,1,1,1,1,3,2,0,1,3,1,0,3,2,3,1,0,3,0,2,4,1,1,2],"Total_Derrotas":[3,2,2,3,2,1,2,2,3,5,2,5,3,1,5,1,3,4,2,1,3,2,3,2,3,3,4,1,3,4,2,4,1,4,2,1,0,1,3,1,3,1,1,1,3,3,3],"Total_Goles":[3,5,9,22,0,3,6,14,31,3,4,3,12,3,2,1,7,13,13,0,10,7,8,8,6,7,6,1,6,14,10,13,17,20,2,2,0,17,8,1,7,4,4,13,11,9,5],"Total_Goles_Recibidos":[7,7,6,11,4,8,9,11,17,19,5,11,10,3,11,2,9,6,10,1,8,9,9,7,6,8,14,2,12,11,4,16,9,12,4,3,0,8,7,3,8,7,4,4,9,10,9],"Diferencia_Gol":[-4,-2,3,11,-4,-5,-3,3,14,-16,-1,-8,2,0,-9,-1,-2,7,3,-1,2,-2,-1,1,0,-1,-8,-1,-6,3,6,-3,8,8,-2,-1,0,9,1,-2,-1,-3,0,9,2,-1,-4]},"columns":[{"id":"url","name":"","type":"character","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"sortable":false,"maxWidth":40,"style":[{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAcademia+Puerto+Cabello.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlianza+Lima.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAlways+Ready.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAtl%C3%A9tico+Mineiro.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAurora.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBarcelona+S.C.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBol%C3%ADvar.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBotafogo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCaracas+F%C3%BAtbol+Club.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCerro+Porte%C3%B1o.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCobresal.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FColo+Colo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDefensor+Sporting.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FDeportivo+T%C3%A1chira.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FCD+El+Nacional.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FEstudiantes.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFlamengo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFluminense.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGodoy+Cruz.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FGremio+de+Porto+Alegre.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FHuachipato.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FIndependiente+del+Valle.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FJunior.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiga+Quito.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLibertad.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FLiverpool+F.C.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FFBC+Melgar.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FMillonarios.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FNacional+de+Montevideo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FClub+Nacional.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalestino.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPalmeiras.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPe%C3%B1arol.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FPortuguesa+F.C.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FBragantino.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRionegro+%C3%81guilas.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRiver+Plate.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FRosario+Central.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FAucas.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSan+Lorenzo+de+Almagro.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSporting+Cristal.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FSportivo+Trinidense.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FS%C3%A3o+Paulo.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FTalleres.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FThe+Strongest.png)"},{"display":"flex","backgroundSize":"100% 100%","backgroundRepeat":"no-repeat","backgroundPosition":"center","fontSize":"0px","backgroundImage":"url(https://sbstatsimages.s3.amazonaws.com/logos_libertadores2024%2FUniversitario+de+Deportes.png)"}]},{"id":"Home_Team","name":"EQUIPO","type":"character","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":140},{"id":"Total_Partidos","name":"PJ","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Victorias","name":"G","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Empates","name":"E","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"}},{"id":"Total_Derrotas","name":"D","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Goles","name":"GF","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Total_Goles_Recibidos","name":"GC","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50},{"id":"Diferencia_Gol","name":"DG","type":"numeric","align":"center","headerStyle":{"borderBottom":"2px solid #FFFFFF","textAlign":"center"},"minWidth":50}],"defaultSorted":[{"id":"Home_Team","desc":false}],"defaultPageSize":10,"outlined":true,"inline":true,"theme":{"color":"white","backgroundColor":"#303030","style":{"fontFamily":"Source Sans 3","fontWeight":"400"}},"dataKey":"afe464f4d7d2a7b3d8f4cfb6a05c6149"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -1524,14 +1524,14 @@ Resumen Equipos
 Información por Equipo
 </span></div></div>
 <div class="cell card-body html-fill-item html-fill-container">
-<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb4" data-startfrom="648" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 647;"><span id="cb4-648"><a href="#cb4-648" aria-hidden="true" tabindex="-1"></a><span class="co">// Este es el filtro de opciones de equipos</span></span>
-<span id="cb4-649"><a href="#cb4-649" aria-hidden="true" tabindex="-1"></a>viewof Equipos <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb4-650"><a href="#cb4-650" aria-hidden="true" tabindex="-1"></a>  match_agg_js<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">Home_Team</span>)<span class="op">,</span></span>
-<span id="cb4-651"><a href="#cb4-651" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb4-652"><a href="#cb4-652" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span> <span class="op">:</span> <span class="st">"Equipos"</span><span class="op">,</span></span>
-<span id="cb4-653"><a href="#cb4-653" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span> <span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb4-654"><a href="#cb4-654" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-655"><a href="#cb4-655" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb4" data-startfrom="653" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 652;"><span id="cb4-653"><a href="#cb4-653" aria-hidden="true" tabindex="-1"></a><span class="co">// Este es el filtro de opciones de equipos</span></span>
+<span id="cb4-654"><a href="#cb4-654" aria-hidden="true" tabindex="-1"></a>viewof Equipos <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb4-655"><a href="#cb4-655" aria-hidden="true" tabindex="-1"></a>  match_agg_js<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">Home_Team</span>)<span class="op">,</span></span>
+<span id="cb4-656"><a href="#cb4-656" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb4-657"><a href="#cb4-657" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span> <span class="op">:</span> <span class="st">"Equipos"</span><span class="op">,</span></span>
+<span id="cb4-658"><a href="#cb4-658" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span> <span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb4-659"><a href="#cb4-659" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-660"><a href="#cb4-660" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div id="ojs-cell-4" data-nodetype="declaration" class="html-fill-item html-fill-container">
 
@@ -1539,73 +1539,73 @@ Información por Equipo
 </div>
 </div>
 <div class="cell card-body html-fill-item html-fill-container" style="height: 90%;">
-<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb5" data-startfrom="667" data-source-offset="-36"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 666;"><span id="cb5-667"><a href="#cb5-667" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> res_equipo_js<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">LastTeam</span> <span class="op">===</span> Equipos)</span>
-<span id="cb5-668"><a href="#cb5-668" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-669"><a href="#cb5-669" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta condicional</span></span>
-<span id="cb5-670"><a href="#cb5-670" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-671"><a href="#cb5-671" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-672"><a href="#cb5-672" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta</span></span>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb5" data-startfrom="672" data-source-offset="-36"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 671;"><span id="cb5-672"><a href="#cb5-672" aria-hidden="true" tabindex="-1"></a>filtered <span class="op">=</span> res_equipo_js<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">LastTeam</span> <span class="op">===</span> Equipos)</span>
 <span id="cb5-673"><a href="#cb5-673" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-674"><a href="#cb5-674" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>filtered<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span></span>
-<span id="cb5-675"><a href="#cb5-675" aria-hidden="true" tabindex="-1"></a><span class="vs">`    &lt;div class="container-fluid py-4"&gt;</span></span>
-<span id="cb5-676"><a href="#cb5-676" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="card shadow"&gt;</span></span>
-<span id="cb5-677"><a href="#cb5-677" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-header text-white"&gt;</span></span>
-<span id="cb5-678"><a href="#cb5-678" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb5-679"><a href="#cb5-679" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;img src="</span><span class="sc">${</span>d<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">?height=60&amp;width=60" alt="Team Logo" class="team-logo me-3"&gt;</span></span>
-<span id="cb5-680"><a href="#cb5-680" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="flex-grow-1 overflow-hidden"&gt;</span></span>
-<span id="cb5-681"><a href="#cb5-681" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;h2 class="mb-0 team-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">LastTeam</span><span class="sc">}</span><span class="vs">&lt;/h2&gt;</span></span>
-<span id="cb5-682"><a href="#cb5-682" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb5-683"><a href="#cb5-683" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb5-684"><a href="#cb5-684" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
-<span id="cb5-685"><a href="#cb5-685" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-body"&gt;</span></span>
-<span id="cb5-686"><a href="#cb5-686" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb5-687"><a href="#cb5-687" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb5-688"><a href="#cb5-688" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;⚽&lt;/div&gt;</span></span>
-<span id="cb5-689"><a href="#cb5-689" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb5-690"><a href="#cb5-690" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Goleador(es)&lt;/h6&gt;</span></span>
-<span id="cb5-691"><a href="#cb5-691" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Goles</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb5-692"><a href="#cb5-692" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Goles</span><span class="sc">}</span><span class="vs"> Goles&lt;/small&gt;</span></span>
-<span id="cb5-693"><a href="#cb5-693" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb5-694"><a href="#cb5-694" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb5-695"><a href="#cb5-695" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb5-696"><a href="#cb5-696" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb5-697"><a href="#cb5-697" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb5-698"><a href="#cb5-698" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;👟&lt;/div&gt;</span></span>
-<span id="cb5-699"><a href="#cb5-699" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb5-700"><a href="#cb5-700" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Máximo Asistidor&lt;/h6&gt;</span></span>
-<span id="cb5-701"><a href="#cb5-701" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb5-702"><a href="#cb5-702" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs"> Asistencias&lt;/small&gt;</span></span>
-<span id="cb5-703"><a href="#cb5-703" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb5-704"><a href="#cb5-704" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb5-705"><a href="#cb5-705" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb5-706"><a href="#cb5-706" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb5-707"><a href="#cb5-707" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb5-708"><a href="#cb5-708" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;🟨&lt;/div&gt;</span></span>
-<span id="cb5-709"><a href="#cb5-709" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb5-710"><a href="#cb5-710" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Más Amarillas&lt;/h6&gt;</span></span>
-<span id="cb5-711"><a href="#cb5-711" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Amarillas</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb5-712"><a href="#cb5-712" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Amarillas</span><span class="sc">}</span><span class="vs"> Tarjetas&lt;/small&gt;</span></span>
-<span id="cb5-713"><a href="#cb5-713" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb5-714"><a href="#cb5-714" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb5-715"><a href="#cb5-715" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb5-716"><a href="#cb5-716" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb5-717"><a href="#cb5-717" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
-<span id="cb5-718"><a href="#cb5-718" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;🟥&lt;/div&gt;</span></span>
-<span id="cb5-719"><a href="#cb5-719" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
-<span id="cb5-720"><a href="#cb5-720" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Más Rojas&lt;/h6&gt;</span></span>
-<span id="cb5-721"><a href="#cb5-721" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Rojas</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb5-722"><a href="#cb5-722" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Rojas</span><span class="sc">}</span><span class="vs"> Tarjetas&lt;/small&gt;</span></span>
-<span id="cb5-723"><a href="#cb5-723" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
-<span id="cb5-724"><a href="#cb5-724" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
-<span id="cb5-725"><a href="#cb5-725" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb5-726"><a href="#cb5-726" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
-<span id="cb5-727"><a href="#cb5-727" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex justify-content-between text-muted flex-wrap"&gt;</span></span>
-<span id="cb5-728"><a href="#cb5-728" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;!-- Optional footer or additional content --&gt;</span></span>
+<span id="cb5-674"><a href="#cb5-674" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta condicional</span></span>
+<span id="cb5-675"><a href="#cb5-675" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-676"><a href="#cb5-676" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-677"><a href="#cb5-677" aria-hidden="true" tabindex="-1"></a><span class="co">// Tarjeta</span></span>
+<span id="cb5-678"><a href="#cb5-678" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-679"><a href="#cb5-679" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>filtered<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span></span>
+<span id="cb5-680"><a href="#cb5-680" aria-hidden="true" tabindex="-1"></a><span class="vs">`    &lt;div class="container-fluid py-4"&gt;</span></span>
+<span id="cb5-681"><a href="#cb5-681" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="card shadow"&gt;</span></span>
+<span id="cb5-682"><a href="#cb5-682" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-header text-white"&gt;</span></span>
+<span id="cb5-683"><a href="#cb5-683" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb5-684"><a href="#cb5-684" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;img src="</span><span class="sc">${</span>d<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">?height=60&amp;width=60" alt="Team Logo" class="team-logo me-3"&gt;</span></span>
+<span id="cb5-685"><a href="#cb5-685" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="flex-grow-1 overflow-hidden"&gt;</span></span>
+<span id="cb5-686"><a href="#cb5-686" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;h2 class="mb-0 team-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">LastTeam</span><span class="sc">}</span><span class="vs">&lt;/h2&gt;</span></span>
+<span id="cb5-687"><a href="#cb5-687" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb5-688"><a href="#cb5-688" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb5-689"><a href="#cb5-689" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
+<span id="cb5-690"><a href="#cb5-690" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;div class="card-body"&gt;</span></span>
+<span id="cb5-691"><a href="#cb5-691" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb5-692"><a href="#cb5-692" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb5-693"><a href="#cb5-693" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;⚽&lt;/div&gt;</span></span>
+<span id="cb5-694"><a href="#cb5-694" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb5-695"><a href="#cb5-695" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Goleador(es)&lt;/h6&gt;</span></span>
+<span id="cb5-696"><a href="#cb5-696" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Goles</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb5-697"><a href="#cb5-697" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Goles</span><span class="sc">}</span><span class="vs"> Goles&lt;/small&gt;</span></span>
+<span id="cb5-698"><a href="#cb5-698" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
+<span id="cb5-699"><a href="#cb5-699" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb5-700"><a href="#cb5-700" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb5-701"><a href="#cb5-701" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb5-702"><a href="#cb5-702" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb5-703"><a href="#cb5-703" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;👟&lt;/div&gt;</span></span>
+<span id="cb5-704"><a href="#cb5-704" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb5-705"><a href="#cb5-705" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Máximo Asistidor&lt;/h6&gt;</span></span>
+<span id="cb5-706"><a href="#cb5-706" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb5-707"><a href="#cb5-707" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Asistencias</span><span class="sc">}</span><span class="vs"> Asistencias&lt;/small&gt;</span></span>
+<span id="cb5-708"><a href="#cb5-708" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
+<span id="cb5-709"><a href="#cb5-709" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb5-710"><a href="#cb5-710" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb5-711"><a href="#cb5-711" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb5-712"><a href="#cb5-712" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb5-713"><a href="#cb5-713" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;🟨&lt;/div&gt;</span></span>
+<span id="cb5-714"><a href="#cb5-714" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb5-715"><a href="#cb5-715" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Más Amarillas&lt;/h6&gt;</span></span>
+<span id="cb5-716"><a href="#cb5-716" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Amarillas</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb5-717"><a href="#cb5-717" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Amarillas</span><span class="sc">}</span><span class="vs"> Tarjetas&lt;/small&gt;</span></span>
+<span id="cb5-718"><a href="#cb5-718" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
+<span id="cb5-719"><a href="#cb5-719" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb5-720"><a href="#cb5-720" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb5-721"><a href="#cb5-721" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb5-722"><a href="#cb5-722" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex align-items-center"&gt;</span></span>
+<span id="cb5-723"><a href="#cb5-723" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-icon me-3"&gt;🟥&lt;/div&gt;</span></span>
+<span id="cb5-724"><a href="#cb5-724" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;div class="stat-content"&gt;</span></span>
+<span id="cb5-725"><a href="#cb5-725" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;h6 class="text-muted mb-0"&gt;Más Rojas&lt;/h6&gt;</span></span>
+<span id="cb5-726"><a href="#cb5-726" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;p class="h5 mb-0 stat-name"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">desc_max_Metric_Total_Rojas</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb5-727"><a href="#cb5-727" aria-hidden="true" tabindex="-1"></a><span class="vs">                            &lt;small class="text-muted"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">value_Metric_Total_Rojas</span><span class="sc">}</span><span class="vs"> Tarjetas&lt;/small&gt;</span></span>
+<span id="cb5-728"><a href="#cb5-728" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;/div&gt;</span></span>
 <span id="cb5-729"><a href="#cb5-729" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
 <span id="cb5-730"><a href="#cb5-730" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
-<span id="cb5-731"><a href="#cb5-731" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
-<span id="cb5-732"><a href="#cb5-732" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
-<span id="cb5-733"><a href="#cb5-733" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span>)<span class="sc">}</span><span class="vs">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-731"><a href="#cb5-731" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;div class="stat-section"&gt;</span></span>
+<span id="cb5-732"><a href="#cb5-732" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;div class="d-flex justify-content-between text-muted flex-wrap"&gt;</span></span>
+<span id="cb5-733"><a href="#cb5-733" aria-hidden="true" tabindex="-1"></a><span class="vs">                        &lt;!-- Optional footer or additional content --&gt;</span></span>
+<span id="cb5-734"><a href="#cb5-734" aria-hidden="true" tabindex="-1"></a><span class="vs">                    &lt;/div&gt;</span></span>
+<span id="cb5-735"><a href="#cb5-735" aria-hidden="true" tabindex="-1"></a><span class="vs">                &lt;/div&gt;</span></span>
+<span id="cb5-736"><a href="#cb5-736" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;/div&gt;</span></span>
+<span id="cb5-737"><a href="#cb5-737" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb5-738"><a href="#cb5-738" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/div&gt;`</span>)<span class="sc">}</span><span class="vs">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div class="html-fill-item html-fill-container">
 <div id="ojs-cell-5-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
@@ -1639,7 +1639,7 @@ Información por Equipo
 
 
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIFRyYW5wb3NlIHRoZSBkYXRhIHRvICBtYWtlIGl0IHVzYWJsZSBpbiBvanNcbm1hdGNoX2FnZ19qcyA9IHRyYW5zcG9zZShtYXRjaF9hZ2dfZGF0YSlcbnJlc19lcXVpcG9fanMgPSB0cmFuc3Bvc2UocmVzX2VxdWlwbylcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIEZpbHRlciBkYXRhIGJhc2VkIG9uIHNlbGVjdGlvblxuXG5FcXVpcG9fQ2FtcGVvbiA9IFwiQm90YWZvZ28gKFJKKVwiXG5FcXVpcG9fU3ViY2FtcGVvbiA9IFwiQXRsw6l0aWNvIE1pbmVpcm9cIlxuXG5maWx0ZXJfY2FtcGVvbiA9IHJlc19lcXVpcG9fanMuZmlsdGVyKGQgPT4gZC5MYXN0VGVhbSA9PT0gRXF1aXBvX0NhbXBlb24pXG5maWx0ZXJfc3ViY2FtcGVvbiA9IHJlc19lcXVpcG9fanMuZmlsdGVyKGQgPT4gZC5MYXN0VGVhbSA9PT0gRXF1aXBvX1N1YmNhbXBlb24pXG5cbi8vIFRhcmpldGEgY29uZGljaW9uYWxcblxuLy8gVGFyamV0YSBDYW1wZW9uXG5cbmh0bWxgJHtmaWx0ZXJfY2FtcGVvbi5tYXAoZCA9PlxuYCAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyLWZsdWlkIHB5LTJcIj5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNhcmQgc2hhZG93XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1oZWFkZXIgdGV4dC13aGl0ZVwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzID0gXCJpY29uLWRpdlwiPlxuICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImZhIGZhLXRyb3BoeSBjaGFtcGlvbi1pY29uXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+PC9pPlxuICAgICAgICAgICAgICAgICAgICA8cD4xwro8L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCIke2QudXJsfT9oZWlnaHQ9NjAmd2lkdGg9NjBcIiBhbHQ9XCJUZWFtIExvZ29cIiBjbGFzcz1cInRlYW0tbG9nbyBtZS0zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWdyb3ctMSBvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz1cIm1iLTAgdGVhbS1uYW1lXCI+JHtkLkxhc3RUZWFtfTwvaDI+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1ib2R5XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGFsaWduLWl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtaWNvbiBtZS0zXCI+4pq9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+R29sZWFkb3IoZXMpPC9oNj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz1cImg1IG1iLTAgc3RhdC1uYW1lXCI+JHtkLmRlc2NfbWF4X01ldHJpY19Ub3RhbF9Hb2xlc308L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNtYWxsIGNsYXNzPVwidGV4dC1tdXRlZFwiPiR7ZC52YWx1ZV9NZXRyaWNfVG90YWxfR29sZXN9IEdvbGVzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5GfPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOheGltbyBBc2lzdGlkb3I8L2g2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPVwiaDUgbWItMCBzdGF0LW5hbWVcIj4ke2QuZGVzY19tYXhfTWV0cmljX1RvdGFsX0FzaXN0ZW5jaWFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9Bc2lzdGVuY2lhc30gQXNpc3RlbmNpYXM8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PmApfWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gVGFyamV0YSBTVUJDYW1wZW9uXG5cbmh0bWxgJHtmaWx0ZXJfc3ViY2FtcGVvbi5tYXAoZCA9PlxuYCAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyLWZsdWlkIHB5LTJcIj5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNhcmQgc2hhZG93XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1oZWFkZXIgdGV4dC13aGl0ZVwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzID0gXCJpY29uLWRpdlwiPlxuICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImZhLXNvbGlkIGZhLW1lZGFsIHNlY29uZC1pY29uXCI+PC9pPlxuICAgICAgICAgICAgICAgICAgICA8cD4ywro8L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCIke2QudXJsfT9oZWlnaHQ9NjAmd2lkdGg9NjBcIiBhbHQ9XCJUZWFtIExvZ29cIiBjbGFzcz1cInRlYW0tbG9nbyBtZS0zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWdyb3ctMSBvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz1cIm1iLTAgdGVhbS1uYW1lXCI+JHtkLkxhc3RUZWFtfTwvaDI+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1ib2R5XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGFsaWduLWl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtaWNvbiBtZS0zXCI+4pq9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+R29sZWFkb3IoZXMpPC9oNj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz1cImg1IG1iLTAgc3RhdC1uYW1lXCI+JHtkLmRlc2NfbWF4X01ldHJpY19Ub3RhbF9Hb2xlc308L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNtYWxsIGNsYXNzPVwidGV4dC1tdXRlZFwiPiR7ZC52YWx1ZV9NZXRyaWNfVG90YWxfR29sZXN9IEdvbGVzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5GfPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOheGltbyBBc2lzdGlkb3I8L2g2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPVwiaDUgbWItMCBzdGF0LW5hbWVcIj4ke2QuZGVzY19tYXhfTWV0cmljX1RvdGFsX0FzaXN0ZW5jaWFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9Bc2lzdGVuY2lhc30gQXNpc3RlbmNpYXM8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PmApfWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIEVzdGUgZXMgZWwgZmlsdHJvIGRlIG9wY2lvbmVzIGRlIGVxdWlwb3NcbnZpZXdvZiBFcXVpcG9zID0gSW5wdXRzLnNlbGVjdChcbiAgbWF0Y2hfYWdnX2pzLm1hcChkID0+IGQuSG9tZV9UZWFtKSxcbiAge1xuICAgIGxhYmVsIDogXCJFcXVpcG9zXCIsXG4gICAgdW5pcXVlIDogdHJ1ZVxufVxuKVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcblxuLy8gRmlsdGVyIGRhdGEgYmFzZWQgb24gc2VsZWN0aW9uXG5maWx0ZXJlZCA9IHJlc19lcXVpcG9fanMuZmlsdGVyKGQgPT4gZC5MYXN0VGVhbSA9PT0gRXF1aXBvcylcblxuLy8gVGFyamV0YSBjb25kaWNpb25hbFxuXG5cbi8vIFRhcmpldGFcblxuaHRtbGAke2ZpbHRlcmVkLm1hcChkID0+XG5gICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXItZmx1aWQgcHktNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZCBzaGFkb3dcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjYXJkLWhlYWRlciB0ZXh0LXdoaXRlXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImQtZmxleCBhbGlnbi1pdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCIke2QudXJsfT9oZWlnaHQ9NjAmd2lkdGg9NjBcIiBhbHQ9XCJUZWFtIExvZ29cIiBjbGFzcz1cInRlYW0tbG9nbyBtZS0zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWdyb3ctMSBvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz1cIm1iLTAgdGVhbS1uYW1lXCI+JHtkLkxhc3RUZWFtfTwvaDI+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1ib2R5XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGFsaWduLWl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtaWNvbiBtZS0zXCI+4pq9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+R29sZWFkb3IoZXMpPC9oNj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz1cImg1IG1iLTAgc3RhdC1uYW1lXCI+JHtkLmRlc2NfbWF4X01ldHJpY19Ub3RhbF9Hb2xlc308L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNtYWxsIGNsYXNzPVwidGV4dC1tdXRlZFwiPiR7ZC52YWx1ZV9NZXRyaWNfVG90YWxfR29sZXN9IEdvbGVzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5GfPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOheGltbyBBc2lzdGlkb3I8L2g2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPVwiaDUgbWItMCBzdGF0LW5hbWVcIj4ke2QuZGVzY19tYXhfTWV0cmljX1RvdGFsX0FzaXN0ZW5jaWFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9Bc2lzdGVuY2lhc30gQXNpc3RlbmNpYXM8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0LXNlY3Rpb25cIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImQtZmxleCBhbGlnbi1pdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0LWljb24gbWUtM1wiPvCfn6g8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0LWNvbnRlbnRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDYgY2xhc3M9XCJ0ZXh0LW11dGVkIG1iLTBcIj5Nw6FzIEFtYXJpbGxhczwvaDY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9XCJoNSBtYi0wIHN0YXQtbmFtZVwiPiR7ZC5kZXNjX21heF9NZXRyaWNfVG90YWxfQW1hcmlsbGFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9BbWFyaWxsYXN9IFRhcmpldGFzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5+lPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOhcyBSb2phczwvaDY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9XCJoNSBtYi0wIHN0YXQtbmFtZVwiPiR7ZC5kZXNjX21heF9NZXRyaWNfVG90YWxfUm9qYXN9PC9wPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzbWFsbCBjbGFzcz1cInRleHQtbXV0ZWRcIj4ke2QudmFsdWVfTWV0cmljX1RvdGFsX1JvamFzfSBUYXJqZXRhczwvc21hbGw+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGp1c3RpZnktY29udGVudC1iZXR3ZWVuIHRleHQtbXV0ZWQgZmxleC13cmFwXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8IS0tIE9wdGlvbmFsIGZvb3RlciBvciBhZGRpdGlvbmFsIGNvbnRlbnQgLS0+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PmApfWBcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdFcXVpcG9zJykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIFRyYW5wb3NlIHRoZSBkYXRhIHRvICBtYWtlIGl0IHVzYWJsZSBpbiBvanNcbm1hdGNoX2FnZ19qcyA9IHRyYW5zcG9zZShtYXRjaF9hZ2dfZGF0YSlcbnJlc19lcXVpcG9fanMgPSB0cmFuc3Bvc2UocmVzX2VxdWlwbylcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIEZpbHRlciBkYXRhIGJhc2VkIG9uIHNlbGVjdGlvblxuXG5FcXVpcG9fQ2FtcGVvbiA9IFwiQm90YWZvZ28gKFJKKVwiXG5FcXVpcG9fU3ViY2FtcGVvbiA9IFwiQXRsw6l0aWNvIE1pbmVpcm9cIlxuXG5maWx0ZXJfY2FtcGVvbiA9IHJlc19lcXVpcG9fanMuZmlsdGVyKGQgPT4gZC5MYXN0VGVhbSA9PT0gRXF1aXBvX0NhbXBlb24pXG5maWx0ZXJfc3ViY2FtcGVvbiA9IHJlc19lcXVpcG9fanMuZmlsdGVyKGQgPT4gZC5MYXN0VGVhbSA9PT0gRXF1aXBvX1N1YmNhbXBlb24pXG5cbi8vIFRhcmpldGEgY29uZGljaW9uYWxcblxuLy8gVGFyamV0YSBDYW1wZW9uXG5cbmh0bWxgJHtmaWx0ZXJfY2FtcGVvbi5tYXAoZCA9PlxuYCAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyLWZsdWlkIHB5LTJxdWFcIj5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNhcmQgc2hhZG93XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1oZWFkZXIgdGV4dC13aGl0ZVwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzID0gXCJpY29uLWRpdlwiPlxuICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImZhIGZhLXRyb3BoeSBjaGFtcGlvbi1pY29uXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+PC9pPlxuICAgICAgICAgICAgICAgICAgICA8cD4xwro8L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCIke2QudXJsfT9oZWlnaHQ9NjAmd2lkdGg9NjBcIiBhbHQ9XCJUZWFtIExvZ29cIiBjbGFzcz1cInRlYW0tbG9nbyBtZS0zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWdyb3ctMSBvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz1cIm1iLTAgdGVhbS1uYW1lXCI+JHtkLkxhc3RUZWFtfTwvaDI+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1ib2R5XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGFsaWduLWl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtaWNvbiBtZS0zXCI+4pq9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+R29sZWFkb3IoZXMpPC9oNj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz1cImg1IG1iLTAgc3RhdC1uYW1lXCI+JHtkLmRlc2NfbWF4X01ldHJpY19Ub3RhbF9Hb2xlc308L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNtYWxsIGNsYXNzPVwidGV4dC1tdXRlZFwiPiR7ZC52YWx1ZV9NZXRyaWNfVG90YWxfR29sZXN9IEdvbGVzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5GfPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOheGltbyBBc2lzdGlkb3I8L2g2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPVwiaDUgbWItMCBzdGF0LW5hbWVcIj4ke2QuZGVzY19tYXhfTWV0cmljX1RvdGFsX0FzaXN0ZW5jaWFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9Bc2lzdGVuY2lhc30gQXNpc3RlbmNpYXM8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PmApfWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gVGFyamV0YSBTVUJDYW1wZW9uXG5cbmh0bWxgJHtmaWx0ZXJfc3ViY2FtcGVvbi5tYXAoZCA9PlxuYCAgICA8ZGl2IGNsYXNzPVwiY29udGFpbmVyLWZsdWlkIHB5LTJcIj5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNhcmQgc2hhZG93XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1oZWFkZXIgdGV4dC13aGl0ZVwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzID0gXCJpY29uLWRpdlwiPlxuICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz1cImZhLXNvbGlkIGZhLW1lZGFsIHNlY29uZC1pY29uXCI+PC9pPlxuICAgICAgICAgICAgICAgICAgICA8cD4ywro8L3A+XG4gICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCIke2QudXJsfT9oZWlnaHQ9NjAmd2lkdGg9NjBcIiBhbHQ9XCJUZWFtIExvZ29cIiBjbGFzcz1cInRlYW0tbG9nbyBtZS0zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWdyb3ctMSBvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz1cIm1iLTAgdGVhbS1uYW1lXCI+JHtkLkxhc3RUZWFtfTwvaDI+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1ib2R5XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGFsaWduLWl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtaWNvbiBtZS0zXCI+4pq9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+R29sZWFkb3IoZXMpPC9oNj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz1cImg1IG1iLTAgc3RhdC1uYW1lXCI+JHtkLmRlc2NfbWF4X01ldHJpY19Ub3RhbF9Hb2xlc308L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNtYWxsIGNsYXNzPVwidGV4dC1tdXRlZFwiPiR7ZC52YWx1ZV9NZXRyaWNfVG90YWxfR29sZXN9IEdvbGVzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5GfPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOheGltbyBBc2lzdGlkb3I8L2g2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPVwiaDUgbWItMCBzdGF0LW5hbWVcIj4ke2QuZGVzY19tYXhfTWV0cmljX1RvdGFsX0FzaXN0ZW5jaWFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9Bc2lzdGVuY2lhc30gQXNpc3RlbmNpYXM8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PmApfWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIEVzdGUgZXMgZWwgZmlsdHJvIGRlIG9wY2lvbmVzIGRlIGVxdWlwb3NcbnZpZXdvZiBFcXVpcG9zID0gSW5wdXRzLnNlbGVjdChcbiAgbWF0Y2hfYWdnX2pzLm1hcChkID0+IGQuSG9tZV9UZWFtKSxcbiAge1xuICAgIGxhYmVsIDogXCJFcXVpcG9zXCIsXG4gICAgdW5pcXVlIDogdHJ1ZVxufVxuKVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJcblxuLy8gRmlsdGVyIGRhdGEgYmFzZWQgb24gc2VsZWN0aW9uXG5maWx0ZXJlZCA9IHJlc19lcXVpcG9fanMuZmlsdGVyKGQgPT4gZC5MYXN0VGVhbSA9PT0gRXF1aXBvcylcblxuLy8gVGFyamV0YSBjb25kaWNpb25hbFxuXG5cbi8vIFRhcmpldGFcblxuaHRtbGAke2ZpbHRlcmVkLm1hcChkID0+XG5gICAgIDxkaXYgY2xhc3M9XCJjb250YWluZXItZmx1aWQgcHktNFwiPlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZCBzaGFkb3dcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJjYXJkLWhlYWRlciB0ZXh0LXdoaXRlXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImQtZmxleCBhbGlnbi1pdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCIke2QudXJsfT9oZWlnaHQ9NjAmd2lkdGg9NjBcIiBhbHQ9XCJUZWFtIExvZ29cIiBjbGFzcz1cInRlYW0tbG9nbyBtZS0zXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmbGV4LWdyb3ctMSBvdmVyZmxvdy1oaWRkZW5cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz1cIm1iLTAgdGVhbS1uYW1lXCI+JHtkLkxhc3RUZWFtfTwvaDI+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2FyZC1ib2R5XCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGFsaWduLWl0ZW1zLWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtaWNvbiBtZS0zXCI+4pq9PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+R29sZWFkb3IoZXMpPC9oNj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz1cImg1IG1iLTAgc3RhdC1uYW1lXCI+JHtkLmRlc2NfbWF4X01ldHJpY19Ub3RhbF9Hb2xlc308L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNtYWxsIGNsYXNzPVwidGV4dC1tdXRlZFwiPiR7ZC52YWx1ZV9NZXRyaWNfVG90YWxfR29sZXN9IEdvbGVzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5GfPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOheGltbyBBc2lzdGlkb3I8L2g2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPVwiaDUgbWItMCBzdGF0LW5hbWVcIj4ke2QuZGVzY19tYXhfTWV0cmljX1RvdGFsX0FzaXN0ZW5jaWFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9Bc2lzdGVuY2lhc30gQXNpc3RlbmNpYXM8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0LXNlY3Rpb25cIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImQtZmxleCBhbGlnbi1pdGVtcy1jZW50ZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0LWljb24gbWUtM1wiPvCfn6g8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJzdGF0LWNvbnRlbnRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDYgY2xhc3M9XCJ0ZXh0LW11dGVkIG1iLTBcIj5Nw6FzIEFtYXJpbGxhczwvaDY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9XCJoNSBtYi0wIHN0YXQtbmFtZVwiPiR7ZC5kZXNjX21heF9NZXRyaWNfVG90YWxfQW1hcmlsbGFzfTwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c21hbGwgY2xhc3M9XCJ0ZXh0LW11dGVkXCI+JHtkLnZhbHVlX01ldHJpY19Ub3RhbF9BbWFyaWxsYXN9IFRhcmpldGFzPC9zbWFsbD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1zZWN0aW9uXCI+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkLWZsZXggYWxpZ24taXRlbXMtY2VudGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1pY29uIG1lLTNcIj7wn5+lPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwic3RhdC1jb250ZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGNsYXNzPVwidGV4dC1tdXRlZCBtYi0wXCI+TcOhcyBSb2phczwvaDY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9XCJoNSBtYi0wIHN0YXQtbmFtZVwiPiR7ZC5kZXNjX21heF9NZXRyaWNfVG90YWxfUm9qYXN9PC9wPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzbWFsbCBjbGFzcz1cInRleHQtbXV0ZWRcIj4ke2QudmFsdWVfTWV0cmljX1RvdGFsX1JvamFzfSBUYXJqZXRhczwvc21hbGw+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInN0YXQtc2VjdGlvblwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZC1mbGV4IGp1c3RpZnktY29udGVudC1iZXR3ZWVuIHRleHQtbXV0ZWQgZmxleC13cmFwXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICA8IS0tIE9wdGlvbmFsIGZvb3RlciBvciBhZGRpdGlvbmFsIGNvbnRlbnQgLS0+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PmApfWBcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdFcXVpcG9zJykifV19
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

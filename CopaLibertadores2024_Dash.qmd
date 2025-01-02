@@ -3,6 +3,11 @@ title: "Copa Libertadores 2024"
 format: 
   dashboard:
     orientation: columns
+    nav-buttons:
+      - icon: house-door-fill
+        href: https://samuelb1992.github.io/
+      - icon: github
+        href: https://github.com/Samuelb1992/copalibertadores2024
 theme: 
   - darkly
   - copalibertadores2024.scss
